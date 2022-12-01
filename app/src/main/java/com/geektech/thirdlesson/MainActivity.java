@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private Boolean isOperationClick, isOperationPlus, isOperationMinus,
             isOperationMultiple, isOperationDivide;
     private Button click;
-    private String btnOperation;
 
 
 
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     public void onNumberClick(View view) {
         switch (view.getId()){
             case R.id.btn_one:
-                btnOperation = "1";
                 click.setVisibility(View.GONE);
                 //click on one
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -50,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_two:
-                btnOperation = "2";
                 click.setVisibility(View.GONE);
                 //click on two
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -61,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_three:
-                btnOperation = "3";
                 click.setVisibility(View.GONE);
                 //click on three
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -72,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_four:
-                btnOperation = "4";
                 click.setVisibility(View.GONE);
                 //click on four
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -83,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_five:
-                btnOperation = "5";
                 click.setVisibility(View.GONE);
                 //click on five
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -94,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_six:
-                btnOperation = "6";
                 click.setVisibility(View.GONE);
                 //click on six
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -105,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_seven:
-                btnOperation = "7";
                 click.setVisibility(View.GONE);
                 //click on seven
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -116,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_eight:
-                btnOperation = "8";
                 click.setVisibility(View.GONE);
                 //click on eight
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -127,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_nine:
-                btnOperation = "9";
                 click.setVisibility(View.GONE);
                 //click on nine
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -138,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_null:
-                btnOperation = "0";
                 click.setVisibility(View.GONE);
                 //click on null
                 if(textView.getText().toString().equals("0") || isOperationClick){
@@ -149,7 +138,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_AC:
-                btnOperation = "AC";
                 click.setVisibility(View.GONE);
                 //click on clear
                 textView.setText("0");
@@ -164,7 +152,6 @@ public class MainActivity extends AppCompatActivity {
     public void onOperationClick(View view) {
         switch (view.getId()){
             case R.id.btn_plus:
-                btnOperation = "+";
                 click.setVisibility(View.GONE);
                 //click on plus
                 first = Integer.valueOf(textView.getText().toString());
@@ -172,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_minus:
-                btnOperation = "-";
                 click.setVisibility(View.GONE);
                 //click on minus
                 first = Integer.valueOf(textView.getText().toString());
@@ -180,7 +166,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_multiple:
-                btnOperation = "x";
                 click.setVisibility(View.GONE);
                 //click on multiple
                 first = Integer.valueOf(textView.getText().toString());
@@ -188,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.btn_divide:
-                btnOperation = "/";
                 click.setVisibility(View.GONE);
                 //click on divide
                 first = Integer.valueOf(textView.getText().toString());
@@ -198,7 +182,6 @@ public class MainActivity extends AppCompatActivity {
 
                 //equate numbers//
             case R.id.btn_equal:
-                btnOperation = "=";
                 click.setVisibility(View.VISIBLE);
                 //click on equal
                 second = Integer.valueOf(textView.getText().toString());
