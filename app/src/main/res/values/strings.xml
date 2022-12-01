@@ -20,4 +20,12 @@
     <string name="click_null">0</string>
     <string name="click_dot">.</string>
     <string name="click_equals">=</string>
+    <string name="policies">Policies</string>
+    <string name="policy">Policy</string>
+    <string name="product_category">Product Category</string>
+    <string name="origin_country">Origin Country</string>
+    <string name="brand">Brand</string>
+    <string name="current_policies">Current Policies</string>
+    <string name="export_as_csv">Export as CSV</string>
+    <string name="btn_click">Click</string>
 </resources>
